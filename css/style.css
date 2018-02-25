@@ -1,0 +1,273 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+ 
+ h1{
+	 font-family: "Montserrat", Rockwell !important;
+	 font-weight: bold;
+ }
+ 
+ body{
+	 font-family: "Montserrat", Cambria !important;
+	 font-size: large;
+ }
+ 
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+nav{
+	position: fixed;
+}
+
+nav ul a{
+  transition: all 0.4s;
+  transform: translateY(0px);
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+nav ul a:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+  padding: 3px 10px;
+}
+
+nav ul a:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 2.2em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+nav ul a:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.NavText{
+	color: #000;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+.brand-logo img{
+	  height: 64px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: 100vh;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+  
+.section{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.text-section{
+	background-color: #EEEEEE;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    
+  }
+  #desktop-header .section {
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #desktop-header .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.header-bar{
+	background: rgba(238,184, 16,0.7);
+	z-index: 10;
+}
+
+#home-header{
+	background-color: rgba(255, 19, 0, 0.7);
+	width: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-banner{
+	line-height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 10px 10px;
+}
+
+.super-yellow {
+  background-color: rgb(238,184,16) !important;
+}
+.super-red{
+  background-color: rgb(255, 19, 0) !important;
+}
+
+.full-container{
+	background-color: white; 
+	min-width: 100%;
+	max-width: 100% !important;
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
+.info-button{
+	position: relative;
+	bottom: 10px;
+}
+
+.info-block{
+
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: .2} 
+  25% {opacity: 1}
+  75% {opacity: 1}
+  100% {opacity: .2}
+}
+
+@keyframes fade {
+  0% {opacity: .2} 
+  25% {opacity: 1}
+  75% {opacity: 1}
+  100% {opacity: .2}
+}
+
+.slide{
+	width: 100%;
+}
+
+.social svg{
+	width: 40px;
+}
+
+#facebook{
+	fill: #3b5998;
+}
+
+#twitter{
+	fill: #0084b4;
+}
+
+#googleplus{
+	fill: #d34836;
+}
+
+#youtube{
+	fill: #cc181e;
+}
+
+.social svg:hover{
+	border-radius: 100%;
+  transform: scale(1.1);
+  transition: background-color .5s, transform .5s ease-out;
+  background-color: #cccccc;
+}
+
+.banner-text{
+	color: white;
+	font-size: 1.5em;
+}
+
+.bold-heading{
+	font-weight: 700;
+}
+
+.btn-large:after{
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+.btn-large:hover:after{
+	animation: sheen 1s forwards;
+}
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+#sidenav-overlay{
+	z-index: 1 !important;
+}
+
+.white-font{
+	color: #fff;
+}
+.black-font{
+	color: #000;
+}
+
+.mobile-pic{
+	width: 100%;
+	top: 0px;
+}
+
+#mobile-header{
+	display:none;
+}
