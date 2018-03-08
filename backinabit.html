@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Video Background</title>
+
+		<style type="text/css">
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				font-family: Calibri, sans-serif;
+			}
+
+			.background-wrap {
+				position: fixed;
+				z-index: -1000;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+			}
+			
+			#video-bg-elem {
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-height: 100%;
+				min-width: 100%;
+			}
+
+
+			.content {
+				position: absolute;
+				width: 100%;
+				min-height: 100%;
+				z-index: 1000;
+				background-color: rgba(50,50,50,0.7);
+			}
+			.content h1 {
+				text-align: center;
+				font-size: 100px;
+				text-transform: uppercase;
+				font-weight: 300;
+				color: #fff;
+				padding-top: 15%;
+				margin-bottom: 10px;
+			}
+			.content p {
+				text-align: center;
+				font-size: 200px;
+				letter-spacing: 3px;
+				color: #ffffff;
+			}
+            iframe{
+                right:0;
+                top:0;
+                position:fixed;
+            }			
+		</style>
+		
+		
+	</head>
+	<body>
+		
+		
+
+
+		
+
+		<div class="background-wrap">
+			<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted"> 
+				<source src="images/Pit%20Video%202018.mp4" type="video/mp4">
+				Video not supported
+			</video>          
+		</div>
+        		<div class="content">         
+			<h1>We'll be back at:</h1>
+			<p id="time"></p>
+<iframe src="http://free.timeanddate.com/clock/i657hg24/n25/fs39/fcfff/tct/pct/th2" frameborder="0" width="313" height="47" allowTransparency="true"></iframe>
+		</div>
+
+		
+<script>
+var a = prompt("Please enter the time you will return", "12:00PM");
+    document.getElementById("time").innerHTML=a;
+        </script>
+
+
+		<!-- VIDEO FILE FROM http://www.videezy.com/ -->
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
