@@ -58,13 +58,40 @@
                 right:0;
                 top:0;
                 position:fixed;
-            }			
+            }		
+            .clock{
+                text-align: center;
+				font-size: 50px;
+				letter-spacing: 3px;
+				color: #ffffff;
+                top:0;
+                right:0; width:100%;
+                text-align:right;
+                z-index: 9999;
+                position:fixed;
+            }
 		</style>
 		
-		
+		<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
 	</head>
 	<body>
-		
+		<body onload="startTime()">
 		<div class="background-wrap">
 			<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted"> 
 				<source src="images/Pit%20Video%202018.mp4" type="video/mp4">
@@ -75,9 +102,9 @@
 			<h1 class="">We'll return:</h1>
 			<p id="time">At 1:00 PM</p>
 			<h1 style="font-size:50px;margin-top:-10%;position:fixed;width:100%;text-align:center;font-weight:400;">Take a treat if you like! &#x263B</h1>
-<iframe src="./Video Background_files/th2.html" frameborder="0" width="313" height="47" allowtransparency="true"></iframe>
+                     <h2  id="txt" class="clock">0:0:0</h2>
 		</div>
-
+           
 		
 <script>
 var a = prompt("Please enter the time you will return", "12:00PM");
