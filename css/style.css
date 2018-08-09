@@ -6,40 +6,36 @@
  * Made By MaterializeCSS.com
  */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
- 
+
  h1{
 	 font-family: "Montserrat", Rockwell !important;
 	 font-weight: bold;
  }
- 
+
  body{
 	 font-family: "Montserrat", Cambria !important;
 	 font-size: large;
  }
- 
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
 
-nav{
-	position: fixed;
-}
+nav ul a, nav .brand-logo { color: #444;}
 
-nav ul a{
+nav{ position: fixed;}
+
+.NavText{
   transition: all 0.4s;
   transform: translateY(0px);
   padding: 0 10px;
   margin: 0 10px;
 }
 
-nav ul a:hover{
+.NavText:hover{
 	background-color: rgba(0, 0, 0, 0.2);
   transform: translateY(-6px);
   padding: 3px 10px;
+  margin-bottom: -6px;
 }
 
-nav ul a:after {
+.NavText:after {
 	content: '';
   position: absolute;
   left: 0;
@@ -55,16 +51,27 @@ nav ul a:after {
 	transform: scale(0,1);
 }
 
-nav ul a:hover:after {
+.NavText:hover:after {
   opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
 .NavText{
-	color: #000;
+  color: #000;
 	font-size: 1.1em;
 	font-weight: 700;
+}
+.SubNavText{
+  color: #000;
+	font-size: 1.1em;
+	font-weight: 700;
+  display: none;
+  background-color: rgba(200,160,10, 0.7);
+}
+.SubNavText:hover{
+  background-color: rgba(170, 135, 9, 0.7);
+  color: #fff;
 }
 
 .brand-logo img{
@@ -79,6 +86,9 @@ p {
   color: #26a69a;
 }
 
+.square_bullet li{list-style-type: square !important;}
+.square_bullet{padding-left: 40px !important;}
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -88,7 +98,7 @@ p {
   .parallax-container .section {
     width: 100%;
   }
-  
+
 .section{
   padding-left: 5%;
   padding-right: 5%;
@@ -100,7 +110,7 @@ p {
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
-    
+
   }
   #desktop-header .section {
   }
@@ -153,7 +163,7 @@ footer.page-footer {
 }
 
 .full-container{
-	background-color: white; 
+	background-color: white;
 	min-width: 100%;
 	max-width: 100% !important;
 	margin-right: 0px !important;
@@ -180,14 +190,14 @@ footer.page-footer {
 }
 
 @-webkit-keyframes fade {
-  0% {opacity: .2} 
+  0% {opacity: .2}
   25% {opacity: 1}
   75% {opacity: 1}
   100% {opacity: .2}
 }
 
 @keyframes fade {
-  0% {opacity: .2} 
+  0% {opacity: .2}
   25% {opacity: 1}
   75% {opacity: 1}
   100% {opacity: .2}
@@ -201,21 +211,10 @@ footer.page-footer {
 	width: 40px;
 }
 
-#facebook{
-	fill: #3b5998;
-}
-
-#twitter{
-	fill: #0084b4;
-}
-
-#googleplus{
-	fill: #d34836;
-}
-
-#youtube{
-	fill: #cc181e;
-}
+#facebook{fill: #3b5998;}
+#twitter{	fill: #0084b4;}
+#googleplus{	fill: #d34836;}
+#youtube{	fill: #cc181e;}
 
 .social svg:hover{
 	border-radius: 100%;

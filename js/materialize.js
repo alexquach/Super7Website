@@ -1837,6 +1837,7 @@ if (jQuery) {
   }; // End dropdown plugin
 
   $(document).ready(function () {
+    $(".dropdown-trigger").dropdown();
     $('.dropdown-button').dropdown();
   });
 })(jQuery);

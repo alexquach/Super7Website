@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-		
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89159196-1"></script>
 	<script>
@@ -23,31 +23,36 @@
 </head>
 <body>
 
-   <nav class="header-bar" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img src="images/Super7Logo.png"></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html" class="NavText">Home</a></li>
-		<li><a href="team.html" class="NavText">Our Team</a></li>
-		<li><a href="robotics.html" class="NavText">Our Robot</a></li>
-		<li><a href="outreach.html" class="NavText">Outreach</a></li>
-        <li><a href="video.html" class="NavText">Videos</a></li>
-		<li><a href="sponsors.html" class="NavText">Sponsors</a></li>
-		<li><a href="contact.html" class="NavText">Contact Us</a></li>
-      </ul>
+  <nav class="header-bar" role="navigation">
+   <div class="nav-wrapper container">
+     <a id="logo-container" href="#" class="brand-logo"><img src="images/Super7Logo.png"></a>
+     <ul class="right hide-on-med-and-down">
+       <li><a href="index.html" class="NavText">Home</a></li>
+       <li><div id="teamNav">
+         <a href="team.html" class="NavText" id="teamNavBtn">Our Team</a>
+         <a href="team_history.html" class="SubNavText">History</a>
+       </div></li>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="index.html" class="NavText">Home</a></li>
-		<li><a href="team.html" class="NavText">Our Team</a></li>
-		<li><a href="robotics.html" class="NavText">Our Robot</a></li>
-		<li><a href="outreach.html" class="NavText">Outreach</a></li>
-          <li><a href="video.html" class="NavText">Videos</a></li>
-		<li><a href="sponsors.html" class="NavText">Sponsors</a></li>
-		<li><a href="contact.html" class="NavText">Contact Us</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse" onclick = "disableSocial()"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+       <li><a href="robotics.html" class="NavText">Our Robot</a></li>
+       <li><a href="outreach.html" class="NavText">Outreach</a></li>
+       <li><a href="video.html" class="NavText">Videos</a></li>
+       <li><a href="sponsors.html" class="NavText">Sponsors</a></li>
+       <li><a href="contact.html" class="NavText">Contact Us</a></li>
+     </ul>
+
+     <ul id="nav-mobile" class="side-nav">
+       <li><a href="index.html" class="NavText">Home</a></li>
+       <li><a href="team.html" class="NavText">Our Team</a></li>
+       <li><a href="team_history.html" class="NavText">Team History</a></li>
+       <li><a href="robotics.html" class="NavText">Our Robot</a></li>
+       <li><a href="outreach.html" class="NavText">Outreach</a></li>
+       <li><a href="video.html" class="NavText">Videos</a></li>
+       <li><a href="sponsors.html" class="NavText">Sponsors</a></li>
+       <li><a href="contact.html" class="NavText">Contact Us</a></li>
+     </ul>
+     <a href="#" data-activates="nav-mobile" class="button-collapse" onclick = "disableSocial()"><i class="material-icons">menu</i></a>
+   </div>
+ </nav>
 
    <div id="socialBar" class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
     <a class="social" href="https://www.facebook.com/Super7Robotics/" target="blank"><svg id="facebook" viewBox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/></svg></a>
@@ -57,20 +62,20 @@
 </div>
 
 <script async src="https://static.addtoany.com/menu/page.js"></script>
-  
+
   <div class="container full-container">
 	<div class="section">
 	  <div class="row" style="margin-top: 80px;">
 	    <h1 class="center-align">Super Sponsors!</h1>
 		<h3 class="center"> Thank you sponsors for your support!</h3>
 	  </div>
-	  
+
 	  <div class="row">
-		  <div class="col m5"> 
+		  <div class="col m5">
 			<img src="images/Super7Sponsors_20180220.jpg" width="100%">
 		  </div>
-		  
-		  <div class="col m7"> 
+
+		  <div class="col m7">
 			<h5>Why Support?</h5>
 			<p>Super 7 is one of the top performing FTC robotics teams based in Central Florida. We are a community-supported team with middle and high school students from nine different schools. Since we are not a school-based team, we lack the funding and institutional support that most of the school-based teams receive. All of our support comes from generous donations from companies such as yours and friends, and families.
 			</p>
@@ -91,7 +96,7 @@
 			</p>
 		  </div>
 	  </div>
-		
+
 	</div>
   </div>
 
@@ -109,7 +114,7 @@
           <h5 class="white-text">Sponsor Us</h5>
 		  <a href="sponsors.html" id="download-button" class="btn-large waves-effect waves-light super-yellow lighten-1 center">Sponsors &#10095;</a>
         </div>
-		
+
         <div class="col l3 s12">
           <h5 class="white-text">Connect with Us</h5>
           <a href="contact.html" id="download-button" class="btn-large waves-effect waves-light super-yellow lighten-1 center">Contact Us! &#10095;</a>

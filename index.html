@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89159196-1"></script>
 	<script>
@@ -23,38 +23,44 @@
 </head>
 <body>
 
-  <nav class="header-bar" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img src="images/Super7Logo.png"></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html" class="NavText">Home</a></li>
-		<li><a href="team.html" class="NavText">Our Team</a></li>
-		<li><a href="robotics.html" class="NavText">Our Robot</a></li>
-		<li><a href="outreach.html" class="NavText">Outreach</a></li>
-        <li><a href="video.html" class="NavText">Videos</a></li>
-		<li><a href="sponsors.html" class="NavText">Sponsors</a></li>
-		<li><a href="contact.html" class="NavText">Contact Us</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="index.html" class="NavText">Home</a></li>
-		<li><a href="team.html" class="NavText">Our Team</a></li>
-		<li><a href="robotics.html" class="NavText">Our Robot</a></li>
-		<li><a href="outreach.html" class="NavText">Outreach</a></li>
-          <li><a href="video.html" class="NavText">Videos</a></li>
-		<li><a href="sponsors.html" class="NavText">Sponsors</a></li>
-		<li><a href="contact.html" class="NavText">Contact Us</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse" onclick = "disableSocial()"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+  <nav class="header-bar" role="navigation">
+   <div class="nav-wrapper container">
+     <a id="logo-container" href="#" class="brand-logo"><img src="images/Super7Logo.png"></a>
+     <ul class="right hide-on-med-and-down">
+       <li><a href="index.html" class="NavText">Home</a></li>
+       <li><div id="teamNav">
+         <a href="team.html" class="NavText" id="teamNavBtn">Our Team</a>
+         <a href="team_history.html" class="SubNavText">History</a>
+       </div></li>
+
+       <li><a href="robotics.html" class="NavText">Our Robot</a></li>
+       <li><a href="outreach.html" class="NavText">Outreach</a></li>
+       <li><a href="video.html" class="NavText">Videos</a></li>
+       <li><a href="sponsors.html" class="NavText">Sponsors</a></li>
+       <li><a href="contact.html" class="NavText">Contact Us</a></li>
+     </ul>
+
+     <ul id="nav-mobile" class="side-nav">
+       <li><a href="index.html" class="NavText">Home</a></li>
+       <li><a href="team.html" class="NavText">Our Team</a></li>
+       <li><a href="team_history.html" class="NavText">Team History</a></li>
+       <li><a href="robotics.html" class="NavText">Our Robot</a></li>
+       <li><a href="outreach.html" class="NavText">Outreach</a></li>
+       <li><a href="video.html" class="NavText">Videos</a></li>
+       <li><a href="sponsors.html" class="NavText">Sponsors</a></li>
+       <li><a href="contact.html" class="NavText">Contact Us</a></li>
+     </ul>
+     <a href="#" data-activates="nav-mobile" class="button-collapse" onclick = "disableSocial()"><i class="material-icons">menu</i></a>
+   </div>
+ </nav>
 
   <div id="desktop-header" class="parallax-container">
     <div class="section no-pad-bot" style="
     bottom: 10%;
     position: absolute;
 	text-align: center;">
-	
+
       <div class="container" id="home-header">
         <br><br>
         <h1 class="header-banner center white-text text-lighten-2" style="font-family: Rockwell; font-weight: bold" >Team&nbsp;7477 Super&nbsp;7</h1>
@@ -64,23 +70,25 @@
         <br><br>
 
       </div>
-	  
+
     </div>
     <div class="parallax" style="position: fixed; background-repeat: none">
 		<img src="images/HomeOriginal.jpg" alt="" class="slide fade">
 		<img src="images/20161130_IITSEC.jpg" alt="" class="slide fade">
 		<img src="images/20161023_Maker-Faire.jpg" alt="" class="slide fade" style="top: 10px;">
+    <img src="images/2018Inspire.jpg" alt="" class="slide fade" style="top: 10px;">
 	</div>
-	
+
   </div>
-  
+
   <div class="container full-container" id="mobile-header">
 	<div style="position: relative; background-repeat: none">
 		<img src="images/HomeOriginalOpt.jpg" alt="" class="mobile-slide fade mobile-pic">
 		<img src="images/20161130_IITSECOpt.jpg" alt="" class="mobile-slide fade mobile-pic">
 		<img src="images/20161023_Maker-FaireOpt.jpg" alt="" class="mobile-slide fade mobile-pic">
+    <img src="images/2018Inspire.jpg" alt="" class="mobile-slide fade mobile-pic">
 	</div>
-	
+
 	<div class="" id="home-header" style="display: absolute; line-height: 1">
         <br><br>
         <h1 class="header center white-text text-lighten-2" style="margin: 0" >Team&nbsp;7477 Super&nbsp;7</h1>
@@ -102,7 +110,7 @@
 </div>
 
 <script async src="https://static.addtoany.com/menu/page.js"></script>
-  
+
   <div class="container full-container" id="firstbanner">
     <div class="section text-section">
 
@@ -152,7 +160,7 @@
   <div class="parallax-container valign-wrapper">
     <div class="parallax"><img src="images/TeamPhoto.JPG" alt="Team Photo"></div>
   </div>
-  
+
   <div class="container full-container">
     <div class="section text-section">
 
@@ -180,8 +188,8 @@
 
     </div>
   </div>
-  
-  
+
+
   <div class="container full-container">
     <div class="section super-yellow">
 
@@ -196,8 +204,8 @@
 
     </div>
   </div>
-  
-  
+
+
 
 
   <div id = "bottom-parallax" class="parallax-container valign-wrapper">
@@ -216,7 +224,7 @@
           <h5 class="white-text">Sponsor Us</h5>
 		  <a href="sponsors.html" id="download-button" class="btn-large waves-effect waves-light super-yellow lighten-1 center">Sponsors &#10095;</a>
         </div>
-		
+
         <div class="col l3 s12">
           <h5 class="white-text">Connect with Us</h5>
           <a href="contact.html" id="download-button" class="btn-large waves-effect waves-light super-yellow lighten-1 center">Contact Us! &#10095;</a>
